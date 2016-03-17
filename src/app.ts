@@ -1,3 +1,3 @@
 export class App {
-  message: string = 'Welcome to Aure';
+  message: string = 'Welcome to Aurelia';
 }
