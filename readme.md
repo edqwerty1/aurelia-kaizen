@@ -8,6 +8,16 @@
 ###Install jspm packages
 `$ jspm install`
 
+###Updated config.js
+After a jspm install the following lines in the config.js:  
+    `"github:*": "jspm_packages/github/*",`  
+    `"npm:*": "jspm_packages/npm/*"`  
+    
+will need changing to:  
+    `"github:*": "../jspm_packages/github/*",`  
+    `"npm:*": "../jspm_packages/npm/*"`  
+ 
+
 ###Run Http-Server
 `$ http-server -o -c-1`
 
