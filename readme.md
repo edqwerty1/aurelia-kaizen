@@ -9,5 +9,5 @@
 `$ jspm install`
 
 ###Run Http-Server
-`$ http-server`
+`$ http-server -o -c-1`
 

@@ -9,12 +9,12 @@ System.config({
     "experimentalDecorators": true
   },
   paths: {
-    "github:*": "../jspm_packages/github/*",
-    "npm:*": "../jspm_packages/npm/*"
+    "github:*": "jspm_packages/github/*",
+    "npm:*": "jspm_packages/npm/*"
   },
 
   packages: {
-    "../src": {
+    "src": {
       "main": "app",
       "defaultExtension": "ts",
       "meta": {
