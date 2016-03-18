@@ -8,7 +8,10 @@
 ###Install jspm packages
 `$ jspm install`
 
-###Updated config.js
+###Install npm packages
+`$ npm install`
+
+###Update config.js
 After a jspm install the following lines in the config.js:  
     `"github:*": "jspm_packages/github/*",`  
     `"npm:*": "jspm_packages/npm/*"`  
