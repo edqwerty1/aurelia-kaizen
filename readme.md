@@ -10,6 +10,7 @@
 
 ###Install npm packages
 `$ npm install`
+`$ npm install http-server -g`
 
 ###Update config.js
 After a jspm install the following lines in the config.js:  
