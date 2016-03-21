@@ -10,6 +10,7 @@
 
 ###Install npm packages
 `$ npm install`
+
 `$ npm install http-server -g`
 
 ###Update config.js
