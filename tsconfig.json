@@ -4,5 +4,11 @@
 		"module": "system",
 		"emitDecoratorMetadata": true,
     "experimentalDecorators": true
-	}
+	},
+    "exclude": [
+       "node_modules",
+       "jspm_packages",
+       "spec",
+       "typings"
+    ]
 }

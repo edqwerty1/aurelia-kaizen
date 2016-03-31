@@ -1,7 +1,7 @@
 /// <reference path="../typings/main.d.ts" />
 
 export class App {
-  message: string = 'Welcome to Aurelia'; 
+  message: string = 'To Do List Implemented with Aurelia'; 
   currentTask:string = "";
   hasFocus: boolean = true;
   tasks:string[] = [];

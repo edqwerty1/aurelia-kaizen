@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Aurelia</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
+</head>
 
-  <body aurelia-app>
-    <script src="jspm_packages/system.js"></script>
-    <script src="config.js"></script>
-    <script>
-      SystemJS.import('aurelia-bootstrapper');
-    </script>
-  </body>
+<body>
+    <div aurelia-app class="container body-content">
+        <script src="jspm_packages/system.js"></script>
+        <script src="config.js"></script>
+        <script>
+            SystemJS.import('aurelia-bootstrapper');
+        </script>
+    </div>
+</body>
+
 </html>

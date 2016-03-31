@@ -1,5 +1,5 @@
 System.config({
-  baseURL: "src",
+  baseURL: "app",
   defaultJSExtensions: true,
   transpiler: "typescript",
   typescriptOptions: {
@@ -14,7 +14,7 @@ System.config({
   },
 
   packages: {
-    "../src": {
+    "../app": {
       "main": "app",
       "defaultExtension": "ts",
       "meta": {

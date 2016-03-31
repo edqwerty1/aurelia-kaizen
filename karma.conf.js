@@ -76,14 +76,14 @@ module.exports = function(config) {
                 'spec': {
                     defaultExtension: 'ts'
                 },
-                'src':{
+                'app':{
                     defaultExtension: 'ts'
                 }
             },
             transpiler: 'typescript',
         },
         serveFiles:[
-            'src/**/*.ts'
+            'app/**/*.ts'
         ]
      }
   })

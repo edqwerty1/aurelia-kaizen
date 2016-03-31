@@ -11,7 +11,6 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
-var mainBowerFiles = require('main-bower-files');
 var sourcemaps = require('gulp-sourcemaps');
 var KarmaServer = require('karma').Server;
 
@@ -24,6 +23,7 @@ gulp.task('sass', function() {
 
 gulp.task('browserSync', function() {
     browserSync.init({
+        port: 3100,
         server: {
             baseDir: "./"
         },
@@ -70,13 +70,6 @@ gulp.task('typescript', function() {
         .pipe(gulp.dest('app/js'));
 })
 
-gulp.task('bower', function() {
-    // add bower dependencies with
-    // bower install <endpoint> --save
-    gulp.src(mainBowerFiles())
-        .pipe(gulp.dest('app/js/vendor'));
-})
-
 gulp.task('watch', ['browserSync', 'sass', 'typescript'], function() {
     gulp.watch('app/scss/**/*.scss', ['sass']);
     gulp.watch('app/ts/**/*.ts', ['typescript']);
@@ -87,7 +80,6 @@ gulp.task('watch', ['browserSync', 'sass', 'typescript'], function() {
 gulp.task('build', function(callback) {
     runSequence(
         'clean:dist', 
-        'bower',
         'typescript',
         'sass',
         ['useref', 'images', 'fonts'],
