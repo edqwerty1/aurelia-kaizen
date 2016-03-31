@@ -1,6 +1,6 @@
 import {EventAggregator} from 'aurelia-event-aggregator';
 import {TodoListUpdatedMessage} from './todo-list-updated-message';
-import { inject } from 'aurelia-framework';
+import {inject} from 'aurelia-framework';
 import {HttpClient} from 'aurelia-fetch-client';
 
 @inject(HttpClient, EventAggregator)
