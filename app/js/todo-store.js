@@ -43,7 +43,7 @@ System.register(['aurelia-event-aggregator', './todo-list-updated-message', 'aur
                     this._http.fetch('todos/', { method: 'get' })
                         .then(function (response) { return response.json(); })
                         .then(function (data) {
-                        _this._eventAggregator.publish(new todo_list_updated_message_1.TodoListUpdatedMessage(data.Todos));
+                        _this._eventAggregator.publish(new todo_list_updated_message_1.TodoListUpdatedMessage(data.todos));
                     })
                         .catch(function (e) {
                         console.log(e);

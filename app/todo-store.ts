@@ -20,7 +20,7 @@ export class TodoStore {
             { method: 'get' })
             .then(response => response.json())
             .then((data) => {
-                this._eventAggregator.publish(new TodoListUpdatedMessage(data.Todos));
+                this._eventAggregator.publish(new TodoListUpdatedMessage(data.todos));
             })
             .catch(e => {
                 console.log(e);
