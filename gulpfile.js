@@ -72,7 +72,7 @@ gulp.task('typescript', function() {
 
 gulp.task('watch', ['browserSync', 'sass', 'typescript'], function() {
     gulp.watch('app/scss/**/*.scss', ['sass']);
-    gulp.watch('app/ts/**/*.ts', ['typescript']);
+    gulp.watch('app/**/*.ts', ['typescript']);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
 })

@@ -1,0 +1,9 @@
+<template>
+    <div class="input-group">
+        <input disabled="disabled" type="text" class="form-control" value="${task.message}"/>
+        <div class="input-group-btn">
+            <button class="btn btn-default" type="button" click.trigger="RemoveTask(task.id)">Remove
+            </button>
+        </div>
+    </div>
+</template>

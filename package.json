@@ -16,6 +16,7 @@
     "dependencies": {
       "aurelia-animator-css": "npm:aurelia-animator-css@^1.0.0-beta.1.1.0",
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0-beta.1.1.1",
+      "aurelia-event-aggregator": "npm:aurelia-event-aggregator@^1.0.0-beta.1.2.0",
       "aurelia-fetch-client": "npm:aurelia-fetch-client@^1.0.0-beta.1.1.0",
       "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1.1.0",
       "aurelia-history-browser": "npm:aurelia-history-browser@^1.0.0-beta.1.1.1",
@@ -25,6 +26,7 @@
       "aurelia-templating-binding": "npm:aurelia-templating-binding@^1.0.0-beta.1.1.0",
       "aurelia-templating-resources": "npm:aurelia-templating-resources@^1.0.0-beta.1.1.0",
       "aurelia-templating-router": "npm:aurelia-templating-router@^1.0.0-beta.1.1.0",
+      "aurelia-validation": "npm:aurelia-validation@^0.6.6",
       "bootstrap": "github:twbs/bootstrap@^3.3.5",
       "core-js": "npm:core-js@^2.0.3",
       "fetch": "github:github/fetch@^0.10.1",
