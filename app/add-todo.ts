@@ -6,7 +6,7 @@ import {Validation, ValidationGroup} from 'aurelia-validation';
 export class AddTodo {
     currentTask: string = "";
     hasFocus: boolean = true;
-    validation : ValidationGroup ;
+    validation: ValidationGroup;
 
     constructor(private _todoStore: TodoStore, valiation: Validation) {
 

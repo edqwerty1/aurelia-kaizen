@@ -1,25 +1,10 @@
 <template>
     <require from="bootstrap/css/bootstrap.min.css"></require>
-    <require from="todo-list.html"></require>
-    <h1 >${message}</h1>
+    <require from="todo-list"></require>
+    <require from="add-todo"></require>
     <div class="container body-content">
-        <div class="panel panel-default col-lg-6">
-            <div class="panel-body">
-                <form role="form" submit.delegate="AddTask()" validate.bind="validation" action="submit" class="form-group">
-                    <div>
-                        <div class="row">
-                            <label for="add-item">Add a new item</label>
-                        </div>
-                        <div class="input-group">
-                            <input id="add-item" class="form-control" type="text" value.bind="currentTask" focus.bind="hasFocus" />
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="submit">Add</button>
-                            </span>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
+        <h1 >${message}</h1>
+        <add-todo></add-todo>
         <div class="col-lg-12"></div>
         <todo-list></todo-list>
     </div>

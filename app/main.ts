@@ -8,7 +8,7 @@ export function configure(aurelia: Aurelia) {
         .developmentLogging()
         .plugin('aurelia-validation',  (config: ValidationConfig) => {
             config.useViewStrategy((<any>TWBootstrapViewStrategy).AppendToInput);
-        }); //Add this line to load the plugin
+        });
 
     aurelia.start().then(a => a.setRoot('app', document.body));
 }

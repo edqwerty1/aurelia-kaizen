@@ -1,5 +1,5 @@
 System.config({
-  baseURL: "./",
+  baseURL: "app",
   defaultJSExtensions: true,
   transpiler: "typescript",
   typescriptOptions: {
@@ -9,8 +9,8 @@ System.config({
     "experimentalDecorators": true
   },
   paths: {
-    "github:*": "jspm_packages/github/*",
-    "npm:*": "jspm_packages/npm/*"
+    "github:*": "../jspm_packages/github/*",
+    "npm:*": "../jspm_packages/npm/*"
   },
 
   packages: {

@@ -1,6 +1,6 @@
 import {EventAggregator} from 'aurelia-event-aggregator';
 import {TodoListUpdatedMessage} from './todo-list-updated-message';
-import { inject } from 'aurelia-framework';
+import {inject} from 'aurelia-framework';
 import {HttpClient, json } from 'aurelia-fetch-client';
 import {ITodos} from './models/todos';
 
@@ -20,6 +20,7 @@ export class TodoStore {
             { method: 'get' })
             .then(response => response.json())
             .then((data) => {
+                console.log(data);
                 this._eventAggregator.publish(new TodoListUpdatedMessage(data.todos));
             })
             .catch(e => {
