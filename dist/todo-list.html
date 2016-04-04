@@ -1,0 +1,16 @@
+<template>
+    <require from="todo-detail.html"></require>
+    <div class="col-lg-6">
+        <ul class="list-group ">
+            <li repeat.for="task of todos" class="list-group-item">
+                <div class="input-group">
+                    <input disabled="disabled" type="text" class="form-control" value="${task.message}"/>
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="button" click.trigger="RemoveTask(task.id)">Remove
+                        </button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</template>
