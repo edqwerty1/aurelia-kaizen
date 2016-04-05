@@ -42,9 +42,9 @@ export class TodoStore {
     addTodo(message: string) {
         console.log(message);
         this._http.fetch(`todos/`, {
-                method: 'post',
-                body: json({"message": message})
-            })
+            method: 'post',
+            body: json({ "message": message })
+        })
             .then(response => response.json())
             .then((data: ITodos) => {
                 this.loadTodos();

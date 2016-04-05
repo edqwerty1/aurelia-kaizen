@@ -1,4 +1,4 @@
-import { inject } from 'aurelia-framework';
+import {inject} from 'aurelia-framework';
 import {TodoStore} from './todo-store';
 import {Validation, ValidationGroup} from 'aurelia-validation';
 
