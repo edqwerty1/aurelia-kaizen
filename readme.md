@@ -23,6 +23,5 @@ will need changing to:
     `"npm:*": "../jspm_packages/npm/*"`  
  
 
-###Run Http-Server
-`$ http-server -o -c-1`
-
+###Run
+`$ gulp

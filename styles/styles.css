@@ -173,3 +173,17 @@ div.au-stagger {
     opacity: 1;
   }
 }
+
+span.input-group-btn { vertical-align: top; }
+p.help-block.aurelia-validation-message {
+    display: inline-block;
+    padding: 15px; 
+    background-color: #f2dede; 
+    border: 1px #ebccd1 solid;
+    border-radius: 4px; 
+    color: #a94442;
+    margin: 0;
+ }
+ p.help-block.aurelia-validation-message:empty {
+     display: none;
+ }

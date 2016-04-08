@@ -12,6 +12,7 @@ export class TodoList {
         console.log("hit ");
         _eventAggregator.subscribe(TodoListUpdatedMessage, todos => {
             this.todos = todos.todos;
+             console.log(this.todos);
         });
         this._todoStore.loadTodos();
     }
